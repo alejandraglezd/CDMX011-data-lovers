@@ -9,35 +9,78 @@
 </head>
 
 <body>
-    <img class="LogoPokemon" src="imagenes/logo_Pokemon-logo-497D61B223-seeklogo.com.png" widht="330px" height="175px">
-    <p>
-        <button type="button" id="tipo">TIPO</button>
-        <button type="button" id="generacion">GENERACION</button>
-        <button type="button" id="resistencia">RESISTENCIA</button>
-        <button type="button" id="debilidad">DEBILIDAD</button>
-    </p>
+    <img id="LogoPokemon" src="imagenes/logo_Pokemon-logo-497D61B223-seeklogo.com.png" widht="340px" height="185px">
+    <img id="Pikachu" src="imagenes/pikachu.png" width="155" height="140">
+    <img id="GO" src="imagenes/GO.png" width="150" height="80">
 
+    <h1>¡Usa la búsqueda avanzada para encontrar un Pokemón!</h1>
 
-    <select name="TYPE">
-        <option>TIPO</option>
-        <option>Avión</option>
-        <option>Tren</option>
-        </select>
+<section class="pokedex">  
+    <select name="types" id="types">
+        <option disabled selected>TIPO</option>
+        <option value="fire">FUEGO</option>
+        <option>AGUA</option>
+        <option>TIERRA</option>
+        <option>ACERO</option>
+        <option>BICHO</option>
+        <option>DRAGÓN</option>
+        <option>ELÉCTRICO</option>
+        <option>FANTASMA</option>
+        <option>HADA</option>
+        <option>HIELO</option>
+        <option>LUCHA</option>
+        <option>NORMAL</option>
+        <option>PLANTA</option>
+        <option>PSIQUICO</option>
+        <option>ROCA</option>
+        <option>SINIESTRO</option>
+        <option>VENENO</option>
+        <option>VOLADOR</option>
+    </select>
 
-    <section>
-        <input class="button" type="reset" value="RESET">
-    </section>
+    <select name="Prarity" id="Prarity">
+        <option>RAREZA</option>
+        <option>NORMAL</option>
+        <option>LEGENDARIO</option>
+        <option>MÍTICO</option>
+    </select>
+
+    <select name="Schance" id="Schance">
+        <option>PROBABILIDAD DE ENCUENTRO</option>
+        <option>nula</option>
+        <option>0 - 1</option>
+        <option>2 - 5</option>
+        <option>6 - 10</option>
+        <option>10 - 16</option>
+    </select>
+
+    <select name="Weak" id="Weak">
+        <option>DEBILIDAD</option>
+        <option>FUEGO</option>
+        <option>HIELO</option>
+        <option>PSÍQUICO</option>
+        <option>AGUA</option>
+        <option>TIERRA</option>
+        <option>ROCA</option>
+        <option></option>
+    </select>
 
     
-<div class = "box">
-    <h3>NOMBRE:</h3>
-    <p>NÚMERO:</p>
-    <p>PESO:</p>
-    <p>ALTURA:</p>
-    <img src>
-</div>
+
+</section>     
+
+
+    
+
+
+
+<!-- <section> 
+    <input class="button" type="reset" value="RESET">
+</section>
+-->
 
     <div id="root"></div>
+
     <script src="main.js" type="module"></script>
 </body>
 
