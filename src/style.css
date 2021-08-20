@@ -1,108 +1,179 @@
-body {
+*{
+    box-sizing: border-box;
+  } 
+  body {
     background-image: url(imagenes/paisaje_fondo.png);
-    background-position: center;
-    background-size: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: center;
     background-repeat: no-repeat;
     margin: 0;
-    height: 100vh;
-}
-.logo {
-    background: transparent;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    top: 35px; 
-    position:relative;
-}
-H1 {
-    color: white;
-    font-family: sans-serif;
-    font-size: 24px;
-    text-align: center;
-    top: 1px;
-    font-weight:normal;
-    text-shadow: 3px  0px 0px rgb(11, 48, 116),
-               0px  2px 0px rgb(11, 48, 116),
-              -2px  0px 0px rgb(11, 48, 116),
-               0px -2px 0px rgb(11, 48, 116);
-    align-content: center;
-}
-.pokedex {
+    padding: 0;
+  }
+  .pokedex {
     background: crimson;
     display: flex;
-    align-items: center;
+    height: 210px;
+    width: 100%;
+    position: relative;
     justify-content: space-around;
-    height: 80px;
+    align-items: center;
+  }  
+  .logoImagenes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+  }
+  .selects{
+    background: crimson;
+    align-items: center;
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: space-evenly;
+    /* align-items: center;
+    justify-content: space-around;
+    height: 90px;
     max-width: 1500px;
-    top: 67px;
+    top: 57px;
     margin: 5px auto;
     padding: 10px;
-    position: relative;
-}
-#types {
+    position: relative; */
+  }
+  #texto{
+      background: crimson;
+      display: flex;
+      height: 65px;
+      justify-content: space-evenly;
+      border: .5px solid oldlace;
+      /* border: 2px solid oldlace; */
+  }
+   H1 {
+    color: white;
+    font-family: "Encode Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+    text-shadow: 3px 0px 0px rgb(11, 48, 116), 0px 2px 0px rgb(11, 48, 116),
+      -2px 0px 0px rgb(11, 48, 116), 0px -2px 0px rgb(11, 48, 116);
+    position:relative;
+  }
+  #types {
     color: yellow;
     background: rgb(19, 63, 121);
-    border:oldlace;
+    border: oldlace;
     height: 30px;
+    width: 143px;
     font-size: 18px;
     text-align: center;
     letter-spacing: 0.11em;
     border-radius: 5px;
     border: 2px solid oldlace;
     box-shadow: 1px 2px 1px black;
-}
-#Srarity {
+    position: relative;
+  }
+  #generation {
     color: rgb(255, 251, 0);
     background: rgb(19, 63, 121);
-    border:oldlace;
+    border: oldlace;
     height: 30px;
+    width: 180px;
     font-size: 18px;
     text-align: center;
     letter-spacing: 0.11em;
     border: 2px solid oldlace;
     border-radius: 5px;
     box-shadow: 1px 2px 1px black;
-}
-#Sorder {
+    position: relative;
+  }
+  #orderAZ {
     color: yellow;
     background: rgb(19, 63, 121);
-    border:oldlace;
+    border: oldlace;
     height: 30px;
+    width: 100px;
     font-size: 18px;
     text-align: center;
     letter-spacing: 0.11em;
     border: 2px solid oldlace;
     border-radius: 5px;
     box-shadow: 1px 2px 1px black;
-}
-#Breset {
-    color:yellow;
+    position: relative;
+  }
+  #orderZA {
+    color: rgb(255, 238, 0);
+    background: rgb(19, 63, 121);
+    border: oldlace;
+    height: 30px;
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.11em;
+    border: 2px solid oldlace;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px black;
+    position: relative;
+  }
+  #reset {
+    color: yellow;
     background: rgb(19, 63, 121);
     height: 32px;
-    width: 110px;
+    width: 230px;
     font-size: 18px;
     letter-spacing: 0.11em;
     border: 2px solid oldlace;
     border-radius: 10px;
     box-shadow: 1px 2px 1px black;
-}
-.box {
+    position: relative;
+  }  
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .box {
+    float: left;
+    top: 65px;
+    margin: 10px;
+    /* margin-right: 10px;
+    position: relative;
+    margin-left: 15px; */
+    height: 330px;
+    width: 212px;
+    border-radius: 11px;
     background: black;
+    border: 3px solid cornsilk;
+    font-family: "Encode Sans", sans-serif;
+    color: #26CA26;
+    text-align: center;
+    font-size: 18px;
+  }
+  .box:hover {
+    background-color: rgb(223, 223, 235) ;
+    color: black;
+    transform: scale(1.03);
+    transition: all 1s ease;
+  }
+  /*.box {
     position: relative;
     top: 65px;
-    width: calc(360px - 60px);
-    height: calc(320px - 30px);
-    float:left;
-    margin: 30px;
-    box-sizing: border-box;
-    overflow: hidden;
+    width: 250px;
+    height: 270px;
+    margin: 9.5px;
+    background: black;
     border-radius: 10px;
     border: 3px solid cornsilk;
-    align-content:space-between;
-    color: #26ca26;
-    font-family: sans-serif;
+    font-family: "Encode Sans", sans-serif;
+    color: #26CA26;
     text-align: center;
     font-size: 14px;
-}
+    overflow: hidden;
+  }*/
+  
+  
+  
+  
+  
+  
+  
+  
