@@ -4,8 +4,8 @@
   body {
     background-image: url(imagenes/paisaje_fondo.png);
     background-attachment: fixed;
-    background-size: center;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
     padding: 0;
   }
@@ -24,6 +24,19 @@
     justify-content: space-between;
    
   }
+  /* #Pikachu{
+    display:flex;
+    align-items: center;
+    left: 100px;
+  }
+  #LogoPokemon{
+  display:flex;
+  align-items: center;
+  }
+  #GO{
+  display: flex;
+align-items: center;
+  } */
   .selects{
     background: crimson;
     align-items: center;
@@ -91,21 +104,7 @@
     background: rgb(19, 63, 121);
     border: oldlace;
     height: 30px;
-    width: 100px;
-    font-size: 18px;
-    text-align: center;
-    letter-spacing: 0.11em;
-    border: 2px solid oldlace;
-    border-radius: 5px;
-    box-shadow: 1px 2px 1px black;
-    position: relative;
-  }
-  #orderZA {
-    color: rgb(255, 238, 0);
-    background: rgb(19, 63, 121);
-    border: oldlace;
-    height: 30px;
-    width: 100px;
+    width: 230px;
     font-size: 18px;
     text-align: center;
     letter-spacing: 0.11em;
@@ -118,11 +117,11 @@
     color: yellow;
     background: rgb(19, 63, 121);
     height: 32px;
-    width: 230px;
+    width: 240px;
     font-size: 18px;
     letter-spacing: 0.11em;
     border: 2px solid oldlace;
-    border-radius: 10px;
+    border-radius: 35px;
     box-shadow: 1px 2px 1px black;
     position: relative;
   }  
@@ -142,7 +141,7 @@
     width: 212px;
     border-radius: 11px;
     background: black;
-    border: 3px solid cornsilk;
+    border: 3px solid oldlace;
     font-family: "Encode Sans", sans-serif;
     color: #26CA26;
     text-align: center;

@@ -14,10 +14,13 @@
          <img id="Pikachu" src="imagenes/pikachu.png" width="132" height="120" />
          <img id="LogoPokemon" src="imagenes/logo_Pokemon.png" widht="340px" height="185px" />
          <img id="GO" src="imagenes/GO.png" width="125" height="65" />
-        </div>
+        </div>  
+      </div>
     </header>   
     <main>
-        <div id="texto"><h1>¡Usa la búsqueda avanzada para encontrar un Pokemón!</h1></div>
+        <div id="texto">
+            <h1>¡Usa la búsqueda avanzada para encontrar un Pokemón!</h1>
+        </div>
         <div class="selects">
             <select id="types" name="types">
               <option disabled selected>TIPO</option>
@@ -45,16 +48,15 @@
               <option value="kanto">KANTO</option>
               <option value="johto">JOHTO</option>
             </select>
-            <!-- <select name= "Aorder" id= "Sorder" >
+            <select name= "Aorder" id= "orderAZ" >
               <option disabled selected>ORDEN ALFABÉTICO</option>
-              <option id="orderAZ" value="A-Z">A-Z</option>
-              <option id="orderAZ" value="Z-A">Z-A</option>
-            </select> -->
-            <button id="orderAZ" value="A-Z">A-Z</button>
-            <button id="orderZA" value="Z-A">Z-A</button> 
+              <option>A-Z</option>
+              <option>Z-A</option>
+            </select>
+            <!-- <button id="orderAZ" value="A-Z">A-Z</button>
+            <button id="orderZA" value="Z-A">Z-A</button> -->
             <button type="reset" id="reset" onclick="history.go(0)">LIMPIAR BÚSQUEDA</button>
         </div>
-      </div>
     </main>
    
     <div id="root"></div>

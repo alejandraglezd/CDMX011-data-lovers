@@ -72,20 +72,4 @@ document.getElementById("orderAZ").addEventListener("click", function () {
   document.getElementById("root").innerHTML = showOrder;
 });
 
-document.getElementById("orderZA").addEventListener("click", function () {
-  const orderHtml = document.getElementById("orderZA").value;
-  const orderAbc = alphabeticOrder(allPokemon, orderHtml)
-   let showOrder =""
-   orderAbc.forEach(sortPokemon => {
-        showOrder += `<div class="container">
-        <div class = "box">
-        <h4>${sortPokemon.name.toUpperCase()}</h4>
-        <img src="${sortPokemon.img}">
-        <p>Número: ${sortPokemon.num}</p>
-        <p>Peso: ${sortPokemon.size.weight}</p>
-        <p>Altura: ${sortPokemon.size.height}</p>
-            </div>
-       </div>`;
-  })
-  document.getElementById("root").innerHTML = showOrder;
-});
+
