@@ -1,18 +1,20 @@
-// import data from '../src/data/pokemon/pokemon.js'
-import {pokemonesMock} from './data.Mock.js'
-import { filterByType } from '../src/data.js';
-import {allPokemon} from '../src/data.js'
-import { expect } from '@jest/globals';
+//import { example, anotherExample } from '../src/data.js';
 
-const pokemones = pokemonesMock;
-
-describe('filtra data por tipo',() => {
-  it('should be a function',() => {
-    expect(typeof filterByType).toBe('function');
+describe('example', () => {
+  it('is a function', () => {
+    expect(typeof example).toBe('function');
   });
-
-  it('returns filtrado por tipo', () => {
-    expect(filterByType(type, 'fire')).toHaveLenght(3);
+  it('returns `example`', () => {
+    expect(example()).toBe('example');
   });
-}
-)
+});
+
+
+describe('anotherExample', () => {
+  it('is a function', () => {
+    expect(typeof anotherExample).toBe('function');
+  });
+  it('returns `anotherExample`', () => {
+    expect(anotherExample()).toBe('OMG');
+  });
+});
