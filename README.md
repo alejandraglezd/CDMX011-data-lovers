@@ -62,24 +62,6 @@ Como mínimo, tu implementación debe:
 
 ### Pruebas unitarias
 
-El _boilerplate_ de este proyecto no incluye Pruebas Unitarias (_tests_), así es
-que  tendrás que escribirlas tú para las funciones encargadas de  _procesar_,
-_filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-
-Tus _pruebas unitarias_ deben dar una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_) del archivo `src/data.js` que contenga tus funciones y está detallado
-en la sección de [Consideraciones técnicas](#srcdatajs).
-
-## 7. Consideraciones técnicas
-
-La lógica del proyecto debe estar implementada completamente en JavaScript
-(ES6), HTML y CSS. En este proyecto NO está permitido usar librerías o
-frameworks, solo [vanilla JavaScript](https://medium.com/laboratoria-how-to/vanillajs-vs-jque![Captura de Pantalla 2021-11-09 a la(s) 13 29 30](https://user-images.githubusercontent.com/86631102/140991754-c959f0b2-3fb8-4d32-a194-8caf15c6031c.png)
-ry-31e623bbd46e),
-con la excepción de librerías para hacer gráficas (charts); ver
-[_Parte opcional_](#6-hacker-edition) más arriba.
-
 
 ![Captura de Pantalla 2021-11-09 a la(s) 13 29 30](https://user-images.githubusercontent.com/86631102/140991846-23cff672-0072-42dd-b520-52595181ed56.png)
 
